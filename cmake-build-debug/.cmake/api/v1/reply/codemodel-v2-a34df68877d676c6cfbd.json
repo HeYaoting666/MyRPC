@@ -1,0 +1,69 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "MyRPC",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "TEST_RPC_CLIENT::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-TEST_RPC_CLIENT-Debug-d5a01cd6f5e855baabc7.json",
+					"name" : "TEST_RPC_CLIENT",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "TEST_RPC_SERVER::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-TEST_RPC_SERVER-Debug-477b689dc3169f73502d.json",
+					"name" : "TEST_RPC_SERVER",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "E:/WorkSpace/C++_WorkSpace/MyRPC/cmake-build-debug",
+		"source" : "E:/WorkSpace/C++_WorkSpace/MyRPC"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

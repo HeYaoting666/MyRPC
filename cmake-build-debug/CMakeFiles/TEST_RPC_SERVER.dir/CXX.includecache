@@ -18,6 +18,10 @@ abstract_protocol.h
 memory
 -
 
+/tmp/tmp.mljPtNlfjI/rocket/coder/tinypb_coder.cpp
+tinypb_coder.h
+/tmp/tmp.mljPtNlfjI/rocket/coder/tinypb_coder.h
+
 /tmp/tmp.mljPtNlfjI/rocket/coder/tinypb_coder.h
 abstract_coder.h
 /tmp/tmp.mljPtNlfjI/rocket/coder/abstract_coder.h
@@ -42,6 +46,12 @@ pthread.h
 semaphore.h
 -
 
+/tmp/tmp.mljPtNlfjI/rocket/common/log.cpp
+log.h
+/tmp/tmp.mljPtNlfjI/rocket/common/log.h
+../net/eventloop.h
+/tmp/tmp.mljPtNlfjI/rocket/net/eventloop.h
+
 /tmp/tmp.mljPtNlfjI/rocket/common/log.h
 string
 -
@@ -57,8 +67,12 @@ cstring
 -
 cassert
 -
+csignal
+-
 sys/time.h
 -
+run_time.h
+/tmp/tmp.mljPtNlfjI/rocket/common/run_time.h
 util.h
 /tmp/tmp.mljPtNlfjI/rocket/common/util.h
 lock.h
@@ -67,6 +81,28 @@ config.h
 /tmp/tmp.mljPtNlfjI/rocket/common/config.h
 ../net/timer_event.h
 /tmp/tmp.mljPtNlfjI/rocket/net/timer_event.h
+
+/tmp/tmp.mljPtNlfjI/rocket/common/msg_id.cpp
+msg_id.h
+/tmp/tmp.mljPtNlfjI/rocket/common/msg_id.h
+
+/tmp/tmp.mljPtNlfjI/rocket/common/msg_id.h
+string
+-
+fcntl.h
+-
+unistd.h
+-
+log.h
+/tmp/tmp.mljPtNlfjI/rocket/common/log.h
+
+/tmp/tmp.mljPtNlfjI/rocket/common/run_time.cpp
+run_time.h
+/tmp/tmp.mljPtNlfjI/rocket/common/run_time.h
+
+/tmp/tmp.mljPtNlfjI/rocket/common/run_time.h
+string
+-
 
 /tmp/tmp.mljPtNlfjI/rocket/common/util.h
 cstring
@@ -82,6 +118,10 @@ sys/time.h
 sys/syscall.h
 -
 
+/tmp/tmp.mljPtNlfjI/rocket/net/eventloop.cpp
+eventloop.h
+/tmp/tmp.mljPtNlfjI/rocket/net/eventloop.h
+
 /tmp/tmp.mljPtNlfjI/rocket/net/eventloop.h
 pthread.h
 -
@@ -95,6 +135,10 @@ fd_event.h
 /tmp/tmp.mljPtNlfjI/rocket/net/fd_event.h
 timer.h
 /tmp/tmp.mljPtNlfjI/rocket/net/timer.h
+
+/tmp/tmp.mljPtNlfjI/rocket/net/fd_event.cpp
+fd_event.h
+/tmp/tmp.mljPtNlfjI/rocket/net/fd_event.h
 
 /tmp/tmp.mljPtNlfjI/rocket/net/fd_event.h
 functional
@@ -114,9 +158,17 @@ sys/timerfd.h
 ../common/log.h
 /tmp/tmp.mljPtNlfjI/rocket/common/log.h
 
+/tmp/tmp.mljPtNlfjI/rocket/net/io_thread.cpp
+io_thread.h
+/tmp/tmp.mljPtNlfjI/rocket/net/io_thread.h
+
 /tmp/tmp.mljPtNlfjI/rocket/net/io_thread.h
 eventloop.h
 /tmp/tmp.mljPtNlfjI/rocket/net/eventloop.h
+
+/tmp/tmp.mljPtNlfjI/rocket/net/timer.cpp
+timer.h
+/tmp/tmp.mljPtNlfjI/rocket/net/timer.h
 
 /tmp/tmp.mljPtNlfjI/rocket/net/timer.h
 map
@@ -126,6 +178,12 @@ fd_event.h
 ../common/lock.h
 /tmp/tmp.mljPtNlfjI/rocket/common/lock.h
 
+/tmp/tmp.mljPtNlfjI/rocket/net/timer_event.cpp
+timer_event.h
+/tmp/tmp.mljPtNlfjI/rocket/net/timer_event.h
+../common/log.h
+/tmp/tmp.mljPtNlfjI/rocket/common/log.h
+
 /tmp/tmp.mljPtNlfjI/rocket/net/timer_event.h
 memory
 -
@@ -134,6 +192,26 @@ functional
 ../common/util.h
 /tmp/tmp.mljPtNlfjI/rocket/common/util.h
 
+/tmp/tmp.mljPtNlfjI/rocket/rpc/rpc_channel.cpp
+rpc_channel.h
+/tmp/tmp.mljPtNlfjI/rocket/rpc/rpc_channel.h
+
+/tmp/tmp.mljPtNlfjI/rocket/rpc/rpc_channel.h
+google/protobuf/service.h
+-
+google/protobuf/descriptor.h
+-
+rpc_controller.h
+/tmp/tmp.mljPtNlfjI/rocket/rpc/rpc_controller.h
+../coder/tinypb_protocol.h
+/tmp/tmp.mljPtNlfjI/rocket/coder/tinypb_protocol.h
+../tcp/tcp_acceptor.h
+/tmp/tmp.mljPtNlfjI/rocket/tcp/tcp_acceptor.h
+../tcp/tcp_client.h
+/tmp/tmp.mljPtNlfjI/rocket/tcp/tcp_client.h
+../common/msg_id.h
+/tmp/tmp.mljPtNlfjI/rocket/common/msg_id.h
+
 /tmp/tmp.mljPtNlfjI/rocket/rpc/rpc_closure.h
 functional
 -
@@ -141,6 +219,10 @@ google/protobuf/stubs/callback.h
 -
 rpc_interface.h
 /tmp/tmp.mljPtNlfjI/rocket/rpc/rpc_interface.h
+
+/tmp/tmp.mljPtNlfjI/rocket/rpc/rpc_controller.cpp
+rpc_controller.h
+/tmp/tmp.mljPtNlfjI/rocket/rpc/rpc_controller.h
 
 /tmp/tmp.mljPtNlfjI/rocket/rpc/rpc_controller.h
 string
@@ -151,6 +233,10 @@ google/protobuf/stubs/callback.h
 -
 ../tcp/tcp_acceptor.h
 /tmp/tmp.mljPtNlfjI/rocket/tcp/tcp_acceptor.h
+
+/tmp/tmp.mljPtNlfjI/rocket/rpc/rpc_dispatcher.cpp
+rpc_dispatcher.h
+/tmp/tmp.mljPtNlfjI/rocket/rpc/rpc_dispatcher.h
 
 /tmp/tmp.mljPtNlfjI/rocket/rpc/rpc_dispatcher.h
 google/protobuf/service.h
@@ -163,6 +249,8 @@ rpc_controller.h
 /tmp/tmp.mljPtNlfjI/rocket/rpc/rpc_controller.h
 rpc_closure.h
 /tmp/tmp.mljPtNlfjI/rocket/rpc/rpc_closure.h
+../common/run_time.h
+/tmp/tmp.mljPtNlfjI/rocket/common/run_time.h
 ../common/error_code.h
 /tmp/tmp.mljPtNlfjI/rocket/common/error_code.h
 ../coder/tinypb_protocol.h
@@ -174,11 +262,19 @@ rpc_closure.h
 memory
 -
 
+/tmp/tmp.mljPtNlfjI/rocket/tcp/tcp_acceptor.cpp
+tcp_acceptor.h
+/tmp/tmp.mljPtNlfjI/rocket/tcp/tcp_acceptor.h
+
 /tmp/tmp.mljPtNlfjI/rocket/tcp/tcp_acceptor.h
 arpa/inet.h
 -
 ../common/log.h
 /tmp/tmp.mljPtNlfjI/rocket/common/log.h
+
+/tmp/tmp.mljPtNlfjI/rocket/tcp/tcp_buffer.cpp
+tcp_buffer.h
+/tmp/tmp.mljPtNlfjI/rocket/tcp/tcp_buffer.h
 
 /tmp/tmp.mljPtNlfjI/rocket/tcp/tcp_buffer.h
 vector
@@ -187,6 +283,26 @@ algorithm
 -
 ../common/log.h
 /tmp/tmp.mljPtNlfjI/rocket/common/log.h
+
+/tmp/tmp.mljPtNlfjI/rocket/tcp/tcp_client.cpp
+tcp_client.h
+/tmp/tmp.mljPtNlfjI/rocket/tcp/tcp_client.h
+
+/tmp/tmp.mljPtNlfjI/rocket/tcp/tcp_client.h
+tcp_acceptor.h
+/tmp/tmp.mljPtNlfjI/rocket/tcp/tcp_acceptor.h
+tcp_connection.h
+/tmp/tmp.mljPtNlfjI/rocket/tcp/tcp_connection.h
+../net/eventloop.h
+/tmp/tmp.mljPtNlfjI/rocket/net/eventloop.h
+../common/error_code.h
+/tmp/tmp.mljPtNlfjI/rocket/common/error_code.h
+../coder/abstract_protocol.h
+/tmp/tmp.mljPtNlfjI/rocket/coder/abstract_protocol.h
+
+/tmp/tmp.mljPtNlfjI/rocket/tcp/tcp_connection.cpp
+tcp_connection.h
+/tmp/tmp.mljPtNlfjI/rocket/tcp/tcp_connection.h
 
 /tmp/tmp.mljPtNlfjI/rocket/tcp/tcp_connection.h
 tcp_acceptor.h
@@ -201,6 +317,10 @@ tcp_buffer.h
 /tmp/tmp.mljPtNlfjI/rocket/coder/tinypb_coder.h
 ../rpc/rpc_dispatcher.h
 /tmp/tmp.mljPtNlfjI/rocket/rpc/rpc_dispatcher.h
+
+/tmp/tmp.mljPtNlfjI/rocket/tcp/tcp_server.cpp
+tcp_server.h
+/tmp/tmp.mljPtNlfjI/rocket/tcp/tcp_server.h
 
 /tmp/tmp.mljPtNlfjI/rocket/tcp/tcp_server.h
 tcp_acceptor.h

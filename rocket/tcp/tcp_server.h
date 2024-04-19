@@ -12,13 +12,12 @@
 
 namespace rocket {
 
-/******************************************************
- *    TCPServer 主线程事件循环
- *    负责监听连接套接字，并处理客户连接
- ******************************************************/
+/**
+ * @brief TCPServer 主线程事件循环, 负责监听连接套接字，并处理客户连接
+ */
 class TCPServer {
 private:
-    EventLoop* m_main_event_loop;     // 主线程事件循环 负责监听连接套接字
+    EventLoop* m_eventloop;           // 主线程事件循环 负责监听连接套接字
     FdEvent* m_listen_fd_event;       // 监听套接字事件
 
     IOThreadGroup* m_io_thread_group; // 从线程组 负责io和逻辑事件处理
@@ -37,8 +36,7 @@ public:
 
 private:
     void onAccept(); // 连接套接字回调函数，负责处理客户连接
-
-    void onClearClientTimerFunc(); // 清除 closed 的连接
+    void onClearClientTimerFunc(); // 定时器回调函数，清除 closed 的连接
 };
 
 }

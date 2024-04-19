@@ -49,36 +49,40 @@
 namespace rocket {
 
 
-/************************************
- *  EventLoop IO事件管理
- ************************************/
+/**
+ * @brief EventLoop IO事件管理
+ */
 class EventLoop {
 public:
     typedef std::function<void()> Fn;
-    static const int MAX_TIMEOUT = 10000;
     static const int MAX_EVENT_NUMBER = 10;
 
 private:
-    pid_t m_thread_id;              // 标识本 event_loop 所属线程
-    int m_epoll_fd;                 // epoll文件描述符
-    std::set<int> m_listen_fds;     // 管理已经被注册至epoll事件表的文件描述符
+    /// 标识本 event_loop 所属线程
+    pid_t m_thread_id;
+    /// epoll文件描述符
+    int m_epoll_fd;
+    /// 管理已经被注册至epoll事件表的文件描述符
+    std::set<int> m_listen_fds;
 
+    /// eventloop 任务队列
     std::queue<Fn> m_pending_tasks;
     Mutex m_mutex;
 
-    WakeUpFdEvent* m_wakeup_fd_event;
-    Timer* m_timer;
+    WakeUpFdEvent* m_wakeup_fd_event = nullptr;
+    Timer* m_timer = nullptr;
 
-    bool m_stop_flag;
-    bool m_is_looping;
+    bool m_is_looping = false;
 
-public:
+private:
     EventLoop();
+public:
+    static EventLoop* GetCurrentEventLoop(); // 获取EvenLoop实例调用EventLoop构造函数,单例模式
     ~EventLoop();
 
-    void loop();
+    void loop();   // 启动EventLoop事件循环
     void wakeup(); // 向wakeup_fd中写入1字节字符，用于唤醒epoll_wait
-    void stop();
+    void stop();   //
 
     bool isInLoopThread() const { return getThreadId() == m_thread_id; }
     bool isLooping() const { return m_is_looping; }
@@ -87,9 +91,6 @@ public:
     void deleteEpollEvent(FdEvent* event);
 
     void addTimerEvent(const TimerEvent::spointer& event);
-
-public:
-    static EventLoop* GetCurrentEventLoop(); // 获取EvenLoop实例
 
 private:
     void initWakeUpFdEevent();

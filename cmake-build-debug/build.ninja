@@ -217,14 +217,6 @@ build CMakeFiles/TEST_RPC_SERVER.dir/rocket/rpc/rpc_dispatcher.cpp.obj: CXX_COMP
   TARGET_COMPILE_PDB = CMakeFiles\TEST_RPC_SERVER.dir\
   TARGET_PDB = TEST_RPC_SERVER.pdb
 
-build CMakeFiles/TEST_RPC_SERVER.dir/rocket/rpc/rpc_interface.cpp.obj: CXX_COMPILER__TEST_RPC_SERVER_unscanned_Debug E$:/WorkSpace/C++_WorkSpace/MyRPC/rocket/rpc/rpc_interface.cpp || cmake_object_order_depends_target_TEST_RPC_SERVER
-  DEP_FILE = CMakeFiles\TEST_RPC_SERVER.dir\rocket\rpc\rpc_interface.cpp.obj.d
-  FLAGS = -g -std=gnu++11 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\TEST_RPC_SERVER.dir
-  OBJECT_FILE_DIR = CMakeFiles\TEST_RPC_SERVER.dir\rocket\rpc
-  TARGET_COMPILE_PDB = CMakeFiles\TEST_RPC_SERVER.dir\
-  TARGET_PDB = TEST_RPC_SERVER.pdb
-
 build CMakeFiles/TEST_RPC_SERVER.dir/test_cases/order.pb.cc.obj: CXX_COMPILER__TEST_RPC_SERVER_unscanned_Debug E$:/WorkSpace/C++_WorkSpace/MyRPC/test_cases/order.pb.cc || cmake_object_order_depends_target_TEST_RPC_SERVER
   DEP_FILE = CMakeFiles\TEST_RPC_SERVER.dir\test_cases\order.pb.cc.obj.d
   FLAGS = -g -std=gnu++11 -fdiagnostics-color=always
@@ -241,7 +233,7 @@ build CMakeFiles/TEST_RPC_SERVER.dir/test_cases/order.pb.cc.obj: CXX_COMPILER__T
 #############################################
 # Link the executable TEST_RPC_SERVER.exe
 
-build TEST_RPC_SERVER.exe: CXX_EXECUTABLE_LINKER__TEST_RPC_SERVER_Debug CMakeFiles/TEST_RPC_SERVER.dir/test_cases/test_rpc_server.cpp.obj CMakeFiles/TEST_RPC_SERVER.dir/rocket/common/config.cpp.obj CMakeFiles/TEST_RPC_SERVER.dir/rocket/common/log.cpp.obj CMakeFiles/TEST_RPC_SERVER.dir/rocket/common/msg_id.cpp.obj CMakeFiles/TEST_RPC_SERVER.dir/rocket/common/run_time.cpp.obj CMakeFiles/TEST_RPC_SERVER.dir/rocket/common/util.cpp.obj CMakeFiles/TEST_RPC_SERVER.dir/rocket/net/eventloop.cpp.obj CMakeFiles/TEST_RPC_SERVER.dir/rocket/net/fd_event.cpp.obj CMakeFiles/TEST_RPC_SERVER.dir/rocket/net/io_thread.cpp.obj CMakeFiles/TEST_RPC_SERVER.dir/rocket/net/timer.cpp.obj CMakeFiles/TEST_RPC_SERVER.dir/rocket/net/timer_event.cpp.obj CMakeFiles/TEST_RPC_SERVER.dir/rocket/tcp/tcp_acceptor.cpp.obj CMakeFiles/TEST_RPC_SERVER.dir/rocket/tcp/tcp_buffer.cpp.obj CMakeFiles/TEST_RPC_SERVER.dir/rocket/tcp/tcp_client.cpp.obj CMakeFiles/TEST_RPC_SERVER.dir/rocket/tcp/tcp_connection.cpp.obj CMakeFiles/TEST_RPC_SERVER.dir/rocket/tcp/tcp_server.cpp.obj CMakeFiles/TEST_RPC_SERVER.dir/rocket/coder/tinypb_coder.cpp.obj CMakeFiles/TEST_RPC_SERVER.dir/rocket/coder/tinypb_protocol.cpp.obj CMakeFiles/TEST_RPC_SERVER.dir/rocket/rpc/rpc_channel.cpp.obj CMakeFiles/TEST_RPC_SERVER.dir/rocket/rpc/rpc_controller.cpp.obj CMakeFiles/TEST_RPC_SERVER.dir/rocket/rpc/rpc_dispatcher.cpp.obj CMakeFiles/TEST_RPC_SERVER.dir/rocket/rpc/rpc_interface.cpp.obj CMakeFiles/TEST_RPC_SERVER.dir/test_cases/order.pb.cc.obj
+build TEST_RPC_SERVER.exe: CXX_EXECUTABLE_LINKER__TEST_RPC_SERVER_Debug CMakeFiles/TEST_RPC_SERVER.dir/test_cases/test_rpc_server.cpp.obj CMakeFiles/TEST_RPC_SERVER.dir/rocket/common/config.cpp.obj CMakeFiles/TEST_RPC_SERVER.dir/rocket/common/log.cpp.obj CMakeFiles/TEST_RPC_SERVER.dir/rocket/common/msg_id.cpp.obj CMakeFiles/TEST_RPC_SERVER.dir/rocket/common/run_time.cpp.obj CMakeFiles/TEST_RPC_SERVER.dir/rocket/common/util.cpp.obj CMakeFiles/TEST_RPC_SERVER.dir/rocket/net/eventloop.cpp.obj CMakeFiles/TEST_RPC_SERVER.dir/rocket/net/fd_event.cpp.obj CMakeFiles/TEST_RPC_SERVER.dir/rocket/net/io_thread.cpp.obj CMakeFiles/TEST_RPC_SERVER.dir/rocket/net/timer.cpp.obj CMakeFiles/TEST_RPC_SERVER.dir/rocket/net/timer_event.cpp.obj CMakeFiles/TEST_RPC_SERVER.dir/rocket/tcp/tcp_acceptor.cpp.obj CMakeFiles/TEST_RPC_SERVER.dir/rocket/tcp/tcp_buffer.cpp.obj CMakeFiles/TEST_RPC_SERVER.dir/rocket/tcp/tcp_client.cpp.obj CMakeFiles/TEST_RPC_SERVER.dir/rocket/tcp/tcp_connection.cpp.obj CMakeFiles/TEST_RPC_SERVER.dir/rocket/tcp/tcp_server.cpp.obj CMakeFiles/TEST_RPC_SERVER.dir/rocket/coder/tinypb_coder.cpp.obj CMakeFiles/TEST_RPC_SERVER.dir/rocket/coder/tinypb_protocol.cpp.obj CMakeFiles/TEST_RPC_SERVER.dir/rocket/rpc/rpc_channel.cpp.obj CMakeFiles/TEST_RPC_SERVER.dir/rocket/rpc/rpc_controller.cpp.obj CMakeFiles/TEST_RPC_SERVER.dir/rocket/rpc/rpc_dispatcher.cpp.obj CMakeFiles/TEST_RPC_SERVER.dir/test_cases/order.pb.cc.obj
   FLAGS = -g
   LINK_LIBRARIES = -ltinyxml  -lprotobuf  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   LINK_PATH = -L/usr/lib
@@ -430,14 +422,6 @@ build CMakeFiles/TEST_RPC_CLIENT.dir/rocket/rpc/rpc_dispatcher.cpp.obj: CXX_COMP
   TARGET_COMPILE_PDB = CMakeFiles\TEST_RPC_CLIENT.dir\
   TARGET_PDB = TEST_RPC_CLIENT.pdb
 
-build CMakeFiles/TEST_RPC_CLIENT.dir/rocket/rpc/rpc_interface.cpp.obj: CXX_COMPILER__TEST_RPC_CLIENT_unscanned_Debug E$:/WorkSpace/C++_WorkSpace/MyRPC/rocket/rpc/rpc_interface.cpp || cmake_object_order_depends_target_TEST_RPC_CLIENT
-  DEP_FILE = CMakeFiles\TEST_RPC_CLIENT.dir\rocket\rpc\rpc_interface.cpp.obj.d
-  FLAGS = -g -std=gnu++11 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\TEST_RPC_CLIENT.dir
-  OBJECT_FILE_DIR = CMakeFiles\TEST_RPC_CLIENT.dir\rocket\rpc
-  TARGET_COMPILE_PDB = CMakeFiles\TEST_RPC_CLIENT.dir\
-  TARGET_PDB = TEST_RPC_CLIENT.pdb
-
 build CMakeFiles/TEST_RPC_CLIENT.dir/test_cases/order.pb.cc.obj: CXX_COMPILER__TEST_RPC_CLIENT_unscanned_Debug E$:/WorkSpace/C++_WorkSpace/MyRPC/test_cases/order.pb.cc || cmake_object_order_depends_target_TEST_RPC_CLIENT
   DEP_FILE = CMakeFiles\TEST_RPC_CLIENT.dir\test_cases\order.pb.cc.obj.d
   FLAGS = -g -std=gnu++11 -fdiagnostics-color=always
@@ -454,7 +438,7 @@ build CMakeFiles/TEST_RPC_CLIENT.dir/test_cases/order.pb.cc.obj: CXX_COMPILER__T
 #############################################
 # Link the executable TEST_RPC_CLIENT.exe
 
-build TEST_RPC_CLIENT.exe: CXX_EXECUTABLE_LINKER__TEST_RPC_CLIENT_Debug CMakeFiles/TEST_RPC_CLIENT.dir/test_cases/test_rpc_client.cpp.obj CMakeFiles/TEST_RPC_CLIENT.dir/rocket/common/config.cpp.obj CMakeFiles/TEST_RPC_CLIENT.dir/rocket/common/log.cpp.obj CMakeFiles/TEST_RPC_CLIENT.dir/rocket/common/msg_id.cpp.obj CMakeFiles/TEST_RPC_CLIENT.dir/rocket/common/run_time.cpp.obj CMakeFiles/TEST_RPC_CLIENT.dir/rocket/common/util.cpp.obj CMakeFiles/TEST_RPC_CLIENT.dir/rocket/net/eventloop.cpp.obj CMakeFiles/TEST_RPC_CLIENT.dir/rocket/net/fd_event.cpp.obj CMakeFiles/TEST_RPC_CLIENT.dir/rocket/net/io_thread.cpp.obj CMakeFiles/TEST_RPC_CLIENT.dir/rocket/net/timer.cpp.obj CMakeFiles/TEST_RPC_CLIENT.dir/rocket/net/timer_event.cpp.obj CMakeFiles/TEST_RPC_CLIENT.dir/rocket/tcp/tcp_acceptor.cpp.obj CMakeFiles/TEST_RPC_CLIENT.dir/rocket/tcp/tcp_buffer.cpp.obj CMakeFiles/TEST_RPC_CLIENT.dir/rocket/tcp/tcp_client.cpp.obj CMakeFiles/TEST_RPC_CLIENT.dir/rocket/tcp/tcp_connection.cpp.obj CMakeFiles/TEST_RPC_CLIENT.dir/rocket/tcp/tcp_server.cpp.obj CMakeFiles/TEST_RPC_CLIENT.dir/rocket/coder/tinypb_coder.cpp.obj CMakeFiles/TEST_RPC_CLIENT.dir/rocket/coder/tinypb_protocol.cpp.obj CMakeFiles/TEST_RPC_CLIENT.dir/rocket/rpc/rpc_channel.cpp.obj CMakeFiles/TEST_RPC_CLIENT.dir/rocket/rpc/rpc_controller.cpp.obj CMakeFiles/TEST_RPC_CLIENT.dir/rocket/rpc/rpc_dispatcher.cpp.obj CMakeFiles/TEST_RPC_CLIENT.dir/rocket/rpc/rpc_interface.cpp.obj CMakeFiles/TEST_RPC_CLIENT.dir/test_cases/order.pb.cc.obj
+build TEST_RPC_CLIENT.exe: CXX_EXECUTABLE_LINKER__TEST_RPC_CLIENT_Debug CMakeFiles/TEST_RPC_CLIENT.dir/test_cases/test_rpc_client.cpp.obj CMakeFiles/TEST_RPC_CLIENT.dir/rocket/common/config.cpp.obj CMakeFiles/TEST_RPC_CLIENT.dir/rocket/common/log.cpp.obj CMakeFiles/TEST_RPC_CLIENT.dir/rocket/common/msg_id.cpp.obj CMakeFiles/TEST_RPC_CLIENT.dir/rocket/common/run_time.cpp.obj CMakeFiles/TEST_RPC_CLIENT.dir/rocket/common/util.cpp.obj CMakeFiles/TEST_RPC_CLIENT.dir/rocket/net/eventloop.cpp.obj CMakeFiles/TEST_RPC_CLIENT.dir/rocket/net/fd_event.cpp.obj CMakeFiles/TEST_RPC_CLIENT.dir/rocket/net/io_thread.cpp.obj CMakeFiles/TEST_RPC_CLIENT.dir/rocket/net/timer.cpp.obj CMakeFiles/TEST_RPC_CLIENT.dir/rocket/net/timer_event.cpp.obj CMakeFiles/TEST_RPC_CLIENT.dir/rocket/tcp/tcp_acceptor.cpp.obj CMakeFiles/TEST_RPC_CLIENT.dir/rocket/tcp/tcp_buffer.cpp.obj CMakeFiles/TEST_RPC_CLIENT.dir/rocket/tcp/tcp_client.cpp.obj CMakeFiles/TEST_RPC_CLIENT.dir/rocket/tcp/tcp_connection.cpp.obj CMakeFiles/TEST_RPC_CLIENT.dir/rocket/tcp/tcp_server.cpp.obj CMakeFiles/TEST_RPC_CLIENT.dir/rocket/coder/tinypb_coder.cpp.obj CMakeFiles/TEST_RPC_CLIENT.dir/rocket/coder/tinypb_protocol.cpp.obj CMakeFiles/TEST_RPC_CLIENT.dir/rocket/rpc/rpc_channel.cpp.obj CMakeFiles/TEST_RPC_CLIENT.dir/rocket/rpc/rpc_controller.cpp.obj CMakeFiles/TEST_RPC_CLIENT.dir/rocket/rpc/rpc_dispatcher.cpp.obj CMakeFiles/TEST_RPC_CLIENT.dir/test_cases/order.pb.cc.obj
   FLAGS = -g
   LINK_LIBRARIES = -ltinyxml  -lprotobuf  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   LINK_PATH = -L/usr/lib

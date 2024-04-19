@@ -11,7 +11,7 @@ rocket::TCPServer::TCPServer(const NetAddr::spointer& local_addr){
     m_acceptor = std::make_shared<TCPAcceptor>(local_addr);
 
     // 初始化 主线程 EventLoop
-    m_main_event_loop = EventLoop::GetCurrentEventLoop();
+    m_eventloop = EventLoop::GetCurrentEventLoop();
 
     // 初始化 从线程 IOThreadGroup
     m_io_thread_group = new IOThreadGroup(Config::GetGlobalConfig()->m_io_threads_nums);
@@ -19,22 +19,24 @@ rocket::TCPServer::TCPServer(const NetAddr::spointer& local_addr){
     // 初始化 监听套接字事件 m_listen_fd_event 不使用ET模式
     m_listen_fd_event = new FdEvent(m_acceptor->getListenFd());
     m_listen_fd_event->setEvent(FdEvent::IN_EVENT, std::bind(&TCPServer::onAccept, this), false);
-    m_main_event_loop->addEpollEvent(m_listen_fd_event);
+    m_eventloop->addEpollEvent(m_listen_fd_event);
 
     // 初始化 定时器事件 m_clear_client_timer_event
     m_clear_client_timer_event = std::make_shared<TimerEvent>(
             5000, true, std::bind(&TCPServer::onClearClientTimerFunc, this));
-    m_main_event_loop->addTimerEvent(m_clear_client_timer_event);
+    m_eventloop->addTimerEvent(m_clear_client_timer_event);
 
     INFOLOG("rocket TCPServer listen success on [%s]", m_acceptor->getLocalAddr()->toString().c_str())
 }
 
 TCPServer::~TCPServer() {
-    if (m_main_event_loop) {
-        delete m_main_event_loop;
-        m_main_event_loop = nullptr;
+    if (m_eventloop) {
+        m_eventloop->stop();
+        delete m_eventloop;
+        m_eventloop = nullptr;
     }
     if (m_io_thread_group) {
+        m_io_thread_group->join();
         delete m_io_thread_group;
         m_io_thread_group = nullptr;
     }
@@ -46,7 +48,7 @@ TCPServer::~TCPServer() {
 
 void TCPServer::start() {
     m_io_thread_group->start();
-    m_main_event_loop->loop();
+    m_eventloop->loop();
 }
 
 void TCPServer::onAccept() {

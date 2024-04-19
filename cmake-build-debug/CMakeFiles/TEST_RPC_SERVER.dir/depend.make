@@ -9,6 +9,7 @@ CMakeFiles/TEST_RPC_SERVER.dir/rocket/coder/tinypb_coder.cpp.o: ../rocket/coder/
 CMakeFiles/TEST_RPC_SERVER.dir/rocket/coder/tinypb_coder.cpp.o: ../rocket/common/config.h
 CMakeFiles/TEST_RPC_SERVER.dir/rocket/coder/tinypb_coder.cpp.o: ../rocket/common/lock.h
 CMakeFiles/TEST_RPC_SERVER.dir/rocket/coder/tinypb_coder.cpp.o: ../rocket/common/log.h
+CMakeFiles/TEST_RPC_SERVER.dir/rocket/coder/tinypb_coder.cpp.o: ../rocket/common/run_time.h
 CMakeFiles/TEST_RPC_SERVER.dir/rocket/coder/tinypb_coder.cpp.o: ../rocket/common/util.h
 CMakeFiles/TEST_RPC_SERVER.dir/rocket/coder/tinypb_coder.cpp.o: ../rocket/net/timer_event.h
 CMakeFiles/TEST_RPC_SERVER.dir/rocket/coder/tinypb_coder.cpp.o: ../rocket/tcp/tcp_buffer.h
@@ -24,6 +25,7 @@ CMakeFiles/TEST_RPC_SERVER.dir/rocket/common/log.cpp.o: ../rocket/common/config.
 CMakeFiles/TEST_RPC_SERVER.dir/rocket/common/log.cpp.o: ../rocket/common/lock.h
 CMakeFiles/TEST_RPC_SERVER.dir/rocket/common/log.cpp.o: ../rocket/common/log.cpp
 CMakeFiles/TEST_RPC_SERVER.dir/rocket/common/log.cpp.o: ../rocket/common/log.h
+CMakeFiles/TEST_RPC_SERVER.dir/rocket/common/log.cpp.o: ../rocket/common/run_time.h
 CMakeFiles/TEST_RPC_SERVER.dir/rocket/common/log.cpp.o: ../rocket/common/util.h
 CMakeFiles/TEST_RPC_SERVER.dir/rocket/common/log.cpp.o: ../rocket/net/eventloop.h
 CMakeFiles/TEST_RPC_SERVER.dir/rocket/common/log.cpp.o: ../rocket/net/fd_event.h
@@ -35,8 +37,12 @@ CMakeFiles/TEST_RPC_SERVER.dir/rocket/common/msg_id.cpp.o: ../rocket/common/lock
 CMakeFiles/TEST_RPC_SERVER.dir/rocket/common/msg_id.cpp.o: ../rocket/common/log.h
 CMakeFiles/TEST_RPC_SERVER.dir/rocket/common/msg_id.cpp.o: ../rocket/common/msg_id.cpp
 CMakeFiles/TEST_RPC_SERVER.dir/rocket/common/msg_id.cpp.o: ../rocket/common/msg_id.h
+CMakeFiles/TEST_RPC_SERVER.dir/rocket/common/msg_id.cpp.o: ../rocket/common/run_time.h
 CMakeFiles/TEST_RPC_SERVER.dir/rocket/common/msg_id.cpp.o: ../rocket/common/util.h
 CMakeFiles/TEST_RPC_SERVER.dir/rocket/common/msg_id.cpp.o: ../rocket/net/timer_event.h
+
+CMakeFiles/TEST_RPC_SERVER.dir/rocket/common/run_time.cpp.o: ../rocket/common/run_time.cpp
+CMakeFiles/TEST_RPC_SERVER.dir/rocket/common/run_time.cpp.o: ../rocket/common/run_time.h
 
 CMakeFiles/TEST_RPC_SERVER.dir/rocket/common/util.cpp.o: ../rocket/common/util.cpp
 CMakeFiles/TEST_RPC_SERVER.dir/rocket/common/util.cpp.o: ../rocket/common/util.h
@@ -44,6 +50,7 @@ CMakeFiles/TEST_RPC_SERVER.dir/rocket/common/util.cpp.o: ../rocket/common/util.h
 CMakeFiles/TEST_RPC_SERVER.dir/rocket/net/eventloop.cpp.o: ../rocket/common/config.h
 CMakeFiles/TEST_RPC_SERVER.dir/rocket/net/eventloop.cpp.o: ../rocket/common/lock.h
 CMakeFiles/TEST_RPC_SERVER.dir/rocket/net/eventloop.cpp.o: ../rocket/common/log.h
+CMakeFiles/TEST_RPC_SERVER.dir/rocket/net/eventloop.cpp.o: ../rocket/common/run_time.h
 CMakeFiles/TEST_RPC_SERVER.dir/rocket/net/eventloop.cpp.o: ../rocket/common/util.h
 CMakeFiles/TEST_RPC_SERVER.dir/rocket/net/eventloop.cpp.o: ../rocket/net/eventloop.cpp
 CMakeFiles/TEST_RPC_SERVER.dir/rocket/net/eventloop.cpp.o: ../rocket/net/eventloop.h
@@ -54,6 +61,7 @@ CMakeFiles/TEST_RPC_SERVER.dir/rocket/net/eventloop.cpp.o: ../rocket/net/timer_e
 CMakeFiles/TEST_RPC_SERVER.dir/rocket/net/fd_event.cpp.o: ../rocket/common/config.h
 CMakeFiles/TEST_RPC_SERVER.dir/rocket/net/fd_event.cpp.o: ../rocket/common/lock.h
 CMakeFiles/TEST_RPC_SERVER.dir/rocket/net/fd_event.cpp.o: ../rocket/common/log.h
+CMakeFiles/TEST_RPC_SERVER.dir/rocket/net/fd_event.cpp.o: ../rocket/common/run_time.h
 CMakeFiles/TEST_RPC_SERVER.dir/rocket/net/fd_event.cpp.o: ../rocket/common/util.h
 CMakeFiles/TEST_RPC_SERVER.dir/rocket/net/fd_event.cpp.o: ../rocket/net/fd_event.cpp
 CMakeFiles/TEST_RPC_SERVER.dir/rocket/net/fd_event.cpp.o: ../rocket/net/fd_event.h
@@ -62,6 +70,7 @@ CMakeFiles/TEST_RPC_SERVER.dir/rocket/net/fd_event.cpp.o: ../rocket/net/timer_ev
 CMakeFiles/TEST_RPC_SERVER.dir/rocket/net/io_thread.cpp.o: ../rocket/common/config.h
 CMakeFiles/TEST_RPC_SERVER.dir/rocket/net/io_thread.cpp.o: ../rocket/common/lock.h
 CMakeFiles/TEST_RPC_SERVER.dir/rocket/net/io_thread.cpp.o: ../rocket/common/log.h
+CMakeFiles/TEST_RPC_SERVER.dir/rocket/net/io_thread.cpp.o: ../rocket/common/run_time.h
 CMakeFiles/TEST_RPC_SERVER.dir/rocket/net/io_thread.cpp.o: ../rocket/common/util.h
 CMakeFiles/TEST_RPC_SERVER.dir/rocket/net/io_thread.cpp.o: ../rocket/net/eventloop.h
 CMakeFiles/TEST_RPC_SERVER.dir/rocket/net/io_thread.cpp.o: ../rocket/net/fd_event.h
@@ -73,6 +82,7 @@ CMakeFiles/TEST_RPC_SERVER.dir/rocket/net/io_thread.cpp.o: ../rocket/net/timer_e
 CMakeFiles/TEST_RPC_SERVER.dir/rocket/net/timer.cpp.o: ../rocket/common/config.h
 CMakeFiles/TEST_RPC_SERVER.dir/rocket/net/timer.cpp.o: ../rocket/common/lock.h
 CMakeFiles/TEST_RPC_SERVER.dir/rocket/net/timer.cpp.o: ../rocket/common/log.h
+CMakeFiles/TEST_RPC_SERVER.dir/rocket/net/timer.cpp.o: ../rocket/common/run_time.h
 CMakeFiles/TEST_RPC_SERVER.dir/rocket/net/timer.cpp.o: ../rocket/common/util.h
 CMakeFiles/TEST_RPC_SERVER.dir/rocket/net/timer.cpp.o: ../rocket/net/fd_event.h
 CMakeFiles/TEST_RPC_SERVER.dir/rocket/net/timer.cpp.o: ../rocket/net/timer.cpp
@@ -82,6 +92,7 @@ CMakeFiles/TEST_RPC_SERVER.dir/rocket/net/timer.cpp.o: ../rocket/net/timer_event
 CMakeFiles/TEST_RPC_SERVER.dir/rocket/net/timer_event.cpp.o: ../rocket/common/config.h
 CMakeFiles/TEST_RPC_SERVER.dir/rocket/net/timer_event.cpp.o: ../rocket/common/lock.h
 CMakeFiles/TEST_RPC_SERVER.dir/rocket/net/timer_event.cpp.o: ../rocket/common/log.h
+CMakeFiles/TEST_RPC_SERVER.dir/rocket/net/timer_event.cpp.o: ../rocket/common/run_time.h
 CMakeFiles/TEST_RPC_SERVER.dir/rocket/net/timer_event.cpp.o: ../rocket/common/util.h
 CMakeFiles/TEST_RPC_SERVER.dir/rocket/net/timer_event.cpp.o: ../rocket/net/timer_event.cpp
 CMakeFiles/TEST_RPC_SERVER.dir/rocket/net/timer_event.cpp.o: ../rocket/net/timer_event.h
@@ -95,6 +106,7 @@ CMakeFiles/TEST_RPC_SERVER.dir/rocket/rpc/rpc_channel.cpp.o: ../rocket/common/er
 CMakeFiles/TEST_RPC_SERVER.dir/rocket/rpc/rpc_channel.cpp.o: ../rocket/common/lock.h
 CMakeFiles/TEST_RPC_SERVER.dir/rocket/rpc/rpc_channel.cpp.o: ../rocket/common/log.h
 CMakeFiles/TEST_RPC_SERVER.dir/rocket/rpc/rpc_channel.cpp.o: ../rocket/common/msg_id.h
+CMakeFiles/TEST_RPC_SERVER.dir/rocket/rpc/rpc_channel.cpp.o: ../rocket/common/run_time.h
 CMakeFiles/TEST_RPC_SERVER.dir/rocket/rpc/rpc_channel.cpp.o: ../rocket/common/util.h
 CMakeFiles/TEST_RPC_SERVER.dir/rocket/rpc/rpc_channel.cpp.o: ../rocket/net/eventloop.h
 CMakeFiles/TEST_RPC_SERVER.dir/rocket/rpc/rpc_channel.cpp.o: ../rocket/net/fd_event.h
@@ -114,6 +126,7 @@ CMakeFiles/TEST_RPC_SERVER.dir/rocket/rpc/rpc_channel.cpp.o: ../rocket/tcp/tcp_c
 CMakeFiles/TEST_RPC_SERVER.dir/rocket/rpc/rpc_controller.cpp.o: ../rocket/common/config.h
 CMakeFiles/TEST_RPC_SERVER.dir/rocket/rpc/rpc_controller.cpp.o: ../rocket/common/lock.h
 CMakeFiles/TEST_RPC_SERVER.dir/rocket/rpc/rpc_controller.cpp.o: ../rocket/common/log.h
+CMakeFiles/TEST_RPC_SERVER.dir/rocket/rpc/rpc_controller.cpp.o: ../rocket/common/run_time.h
 CMakeFiles/TEST_RPC_SERVER.dir/rocket/rpc/rpc_controller.cpp.o: ../rocket/common/util.h
 CMakeFiles/TEST_RPC_SERVER.dir/rocket/rpc/rpc_controller.cpp.o: ../rocket/net/timer_event.h
 CMakeFiles/TEST_RPC_SERVER.dir/rocket/rpc/rpc_controller.cpp.o: ../rocket/rpc/rpc_controller.cpp
@@ -128,6 +141,7 @@ CMakeFiles/TEST_RPC_SERVER.dir/rocket/rpc/rpc_dispatcher.cpp.o: ../rocket/common
 CMakeFiles/TEST_RPC_SERVER.dir/rocket/rpc/rpc_dispatcher.cpp.o: ../rocket/common/error_code.h
 CMakeFiles/TEST_RPC_SERVER.dir/rocket/rpc/rpc_dispatcher.cpp.o: ../rocket/common/lock.h
 CMakeFiles/TEST_RPC_SERVER.dir/rocket/rpc/rpc_dispatcher.cpp.o: ../rocket/common/log.h
+CMakeFiles/TEST_RPC_SERVER.dir/rocket/rpc/rpc_dispatcher.cpp.o: ../rocket/common/run_time.h
 CMakeFiles/TEST_RPC_SERVER.dir/rocket/rpc/rpc_dispatcher.cpp.o: ../rocket/common/util.h
 CMakeFiles/TEST_RPC_SERVER.dir/rocket/rpc/rpc_dispatcher.cpp.o: ../rocket/net/eventloop.h
 CMakeFiles/TEST_RPC_SERVER.dir/rocket/rpc/rpc_dispatcher.cpp.o: ../rocket/net/fd_event.h
@@ -148,6 +162,7 @@ CMakeFiles/TEST_RPC_SERVER.dir/rocket/rpc/rpc_interface.cpp.o: ../rocket/rpc/rpc
 CMakeFiles/TEST_RPC_SERVER.dir/rocket/tcp/tcp_acceptor.cpp.o: ../rocket/common/config.h
 CMakeFiles/TEST_RPC_SERVER.dir/rocket/tcp/tcp_acceptor.cpp.o: ../rocket/common/lock.h
 CMakeFiles/TEST_RPC_SERVER.dir/rocket/tcp/tcp_acceptor.cpp.o: ../rocket/common/log.h
+CMakeFiles/TEST_RPC_SERVER.dir/rocket/tcp/tcp_acceptor.cpp.o: ../rocket/common/run_time.h
 CMakeFiles/TEST_RPC_SERVER.dir/rocket/tcp/tcp_acceptor.cpp.o: ../rocket/common/util.h
 CMakeFiles/TEST_RPC_SERVER.dir/rocket/tcp/tcp_acceptor.cpp.o: ../rocket/net/timer_event.h
 CMakeFiles/TEST_RPC_SERVER.dir/rocket/tcp/tcp_acceptor.cpp.o: ../rocket/tcp/tcp_acceptor.cpp
@@ -156,6 +171,7 @@ CMakeFiles/TEST_RPC_SERVER.dir/rocket/tcp/tcp_acceptor.cpp.o: ../rocket/tcp/tcp_
 CMakeFiles/TEST_RPC_SERVER.dir/rocket/tcp/tcp_buffer.cpp.o: ../rocket/common/config.h
 CMakeFiles/TEST_RPC_SERVER.dir/rocket/tcp/tcp_buffer.cpp.o: ../rocket/common/lock.h
 CMakeFiles/TEST_RPC_SERVER.dir/rocket/tcp/tcp_buffer.cpp.o: ../rocket/common/log.h
+CMakeFiles/TEST_RPC_SERVER.dir/rocket/tcp/tcp_buffer.cpp.o: ../rocket/common/run_time.h
 CMakeFiles/TEST_RPC_SERVER.dir/rocket/tcp/tcp_buffer.cpp.o: ../rocket/common/util.h
 CMakeFiles/TEST_RPC_SERVER.dir/rocket/tcp/tcp_buffer.cpp.o: ../rocket/net/timer_event.h
 CMakeFiles/TEST_RPC_SERVER.dir/rocket/tcp/tcp_buffer.cpp.o: ../rocket/tcp/tcp_buffer.cpp
@@ -169,6 +185,7 @@ CMakeFiles/TEST_RPC_SERVER.dir/rocket/tcp/tcp_client.cpp.o: ../rocket/common/con
 CMakeFiles/TEST_RPC_SERVER.dir/rocket/tcp/tcp_client.cpp.o: ../rocket/common/error_code.h
 CMakeFiles/TEST_RPC_SERVER.dir/rocket/tcp/tcp_client.cpp.o: ../rocket/common/lock.h
 CMakeFiles/TEST_RPC_SERVER.dir/rocket/tcp/tcp_client.cpp.o: ../rocket/common/log.h
+CMakeFiles/TEST_RPC_SERVER.dir/rocket/tcp/tcp_client.cpp.o: ../rocket/common/run_time.h
 CMakeFiles/TEST_RPC_SERVER.dir/rocket/tcp/tcp_client.cpp.o: ../rocket/common/util.h
 CMakeFiles/TEST_RPC_SERVER.dir/rocket/tcp/tcp_client.cpp.o: ../rocket/net/eventloop.h
 CMakeFiles/TEST_RPC_SERVER.dir/rocket/tcp/tcp_client.cpp.o: ../rocket/net/fd_event.h
@@ -192,6 +209,7 @@ CMakeFiles/TEST_RPC_SERVER.dir/rocket/tcp/tcp_connection.cpp.o: ../rocket/common
 CMakeFiles/TEST_RPC_SERVER.dir/rocket/tcp/tcp_connection.cpp.o: ../rocket/common/error_code.h
 CMakeFiles/TEST_RPC_SERVER.dir/rocket/tcp/tcp_connection.cpp.o: ../rocket/common/lock.h
 CMakeFiles/TEST_RPC_SERVER.dir/rocket/tcp/tcp_connection.cpp.o: ../rocket/common/log.h
+CMakeFiles/TEST_RPC_SERVER.dir/rocket/tcp/tcp_connection.cpp.o: ../rocket/common/run_time.h
 CMakeFiles/TEST_RPC_SERVER.dir/rocket/tcp/tcp_connection.cpp.o: ../rocket/common/util.h
 CMakeFiles/TEST_RPC_SERVER.dir/rocket/tcp/tcp_connection.cpp.o: ../rocket/net/eventloop.h
 CMakeFiles/TEST_RPC_SERVER.dir/rocket/tcp/tcp_connection.cpp.o: ../rocket/net/fd_event.h
@@ -214,6 +232,7 @@ CMakeFiles/TEST_RPC_SERVER.dir/rocket/tcp/tcp_server.cpp.o: ../rocket/common/con
 CMakeFiles/TEST_RPC_SERVER.dir/rocket/tcp/tcp_server.cpp.o: ../rocket/common/error_code.h
 CMakeFiles/TEST_RPC_SERVER.dir/rocket/tcp/tcp_server.cpp.o: ../rocket/common/lock.h
 CMakeFiles/TEST_RPC_SERVER.dir/rocket/tcp/tcp_server.cpp.o: ../rocket/common/log.h
+CMakeFiles/TEST_RPC_SERVER.dir/rocket/tcp/tcp_server.cpp.o: ../rocket/common/run_time.h
 CMakeFiles/TEST_RPC_SERVER.dir/rocket/tcp/tcp_server.cpp.o: ../rocket/common/util.h
 CMakeFiles/TEST_RPC_SERVER.dir/rocket/tcp/tcp_server.cpp.o: ../rocket/net/eventloop.h
 CMakeFiles/TEST_RPC_SERVER.dir/rocket/tcp/tcp_server.cpp.o: ../rocket/net/fd_event.h
@@ -241,6 +260,7 @@ CMakeFiles/TEST_RPC_SERVER.dir/test_cases/test_rpc_server.cpp.o: ../rocket/commo
 CMakeFiles/TEST_RPC_SERVER.dir/test_cases/test_rpc_server.cpp.o: ../rocket/common/error_code.h
 CMakeFiles/TEST_RPC_SERVER.dir/test_cases/test_rpc_server.cpp.o: ../rocket/common/lock.h
 CMakeFiles/TEST_RPC_SERVER.dir/test_cases/test_rpc_server.cpp.o: ../rocket/common/log.h
+CMakeFiles/TEST_RPC_SERVER.dir/test_cases/test_rpc_server.cpp.o: ../rocket/common/run_time.h
 CMakeFiles/TEST_RPC_SERVER.dir/test_cases/test_rpc_server.cpp.o: ../rocket/common/util.h
 CMakeFiles/TEST_RPC_SERVER.dir/test_cases/test_rpc_server.cpp.o: ../rocket/net/eventloop.h
 CMakeFiles/TEST_RPC_SERVER.dir/test_cases/test_rpc_server.cpp.o: ../rocket/net/fd_event.h

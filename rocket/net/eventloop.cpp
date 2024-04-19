@@ -15,16 +15,12 @@ EventLoop *EventLoop::GetCurrentEventLoop() {
     return t_current_eventloop;
 }
 
-rocket::EventLoop::EventLoop():
-    m_stop_flag(false),
-    m_is_looping(false),
-    m_wakeup_fd_event(nullptr),
-    m_timer(nullptr)
-{
+rocket::EventLoop::EventLoop() {
     if(t_current_eventloop != nullptr) {
         ERRORLOG("failed to create event loop, this thread %d has created event loop", m_thread_id)
         exit(0);
     }
+    t_current_eventloop = this;
 
     m_thread_id = getThreadId();
     m_epoll_fd = epoll_create(10);
@@ -38,7 +34,6 @@ rocket::EventLoop::EventLoop():
     initTimer();
 
     INFOLOG("success create event loop in thread[%d]", m_thread_id)
-    t_current_eventloop = this;
 }
 
 EventLoop::~EventLoop() {
@@ -57,7 +52,7 @@ void EventLoop::loop() {
     m_is_looping = true;
     epoll_event events[MAX_EVENT_NUMBER];
 
-    while(!m_stop_flag) {
+    while(m_is_looping) {
         // 从队列中取出需要执行的任务
         ScopeMutex<Mutex> locker(m_mutex);
         std::queue< std::function<void()> > tmp_tasks;
@@ -72,10 +67,8 @@ void EventLoop::loop() {
             if(call_back) call_back();
         }
 
-//        int time_out = MAX_TIMEOUT;
-        int time_out = -1;
 //        DEBUGLOG("%s", "now begin to epoll_wait")
-        int num_events = epoll_wait(m_epoll_fd, events, MAX_EVENT_NUMBER, time_out);
+        int num_events = epoll_wait(m_epoll_fd, events, MAX_EVENT_NUMBER, -1);
 //        DEBUGLOG("now end epoll_wait, num_events = %d", num_events)
         if (num_events < 0 && errno != EINTR) {
             ERRORLOG("epoll_wait error, errno=%d, error=%s", errno, strerror(errno))
@@ -116,7 +109,7 @@ void EventLoop::wakeup() {
 }
 
 void EventLoop::stop() {
-    m_stop_flag = true;
+    m_is_looping = false;
     wakeup();
 }
 
